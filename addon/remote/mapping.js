@@ -108,7 +108,7 @@ export var ChangeMeta = Ember.Object.extend({
   },
 
   validate: function(meta) {
-    if (Util.isBlank(meta.total_pages)) {
+    if (Util.isBlank(meta.pagination.total_pages)) {
       Validate.internalError("no total_pages in meta response",meta);
     }
   }
